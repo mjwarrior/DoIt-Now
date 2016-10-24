@@ -12,24 +12,52 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
 
     @IBOutlet weak var tableView: UITableView!
     
+    var tasks : [Task] = []
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     
-    tableView.dataSource = self
+    tasks = makeTasks()
+        
+        
+        tableView.dataSource = self
     tableView.delegate = self
     
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return tasks.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell  = UITableViewCell()
-        cell.textLabel?.text = "hello"
+        let task = tasks[indexPath.row]
+        cell.textLabel?.text = task.name
         return cell
     }
+    func makeTasks() -> [Task] {
+     let task1 = Task()
+     task1.name = "Buy some Choclates"
+     task1.important =  false
+  
+    
+        let task2 = Task()
+        task2.name = "Buy a soda"
+        task2.important =  false
+ 
+        let task3 = Task()
+        task3.name = "Take care of baby"
+        task3.important =  true
+
+    
+    return [task1 , task2 ,task3]
+    
+    
+    }
+    
+    
     
 }
 
