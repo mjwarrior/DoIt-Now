@@ -13,6 +13,7 @@
 		D4B0CFBB1DBE77E200429257 /* Doit_Now.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D4B0CFB91DBE77E200429257 /* Doit_Now.xcdatamodeld */; };
 		D4B0CFBD1DBE77E200429257 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4B0CFBC1DBE77E200429257 /* Assets.xcassets */; };
 		D4B0CFC01DBE77E200429257 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4B0CFBE1DBE77E200429257 /* LaunchScreen.storyboard */; };
+		D4B672441DBE9E3B006497EA /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B672431DBE9E3B006497EA /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D4B0CFBC1DBE77E200429257 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4B0CFBF1DBE77E200429257 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4B0CFC11DBE77E200429257 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4B672431DBE9E3B006497EA /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Task.swift; path = ../../Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				D4B0CFB21DBE77E100429257 /* AppDelegate.swift */,
 				D4B0CFB41DBE77E100429257 /* ViewController.swift */,
+				D4B672431DBE9E3B006497EA /* Task.swift */,
 				D4B0CFB61DBE77E100429257 /* Main.storyboard */,
 				D4B0CFBC1DBE77E200429257 /* Assets.xcassets */,
 				D4B0CFBE1DBE77E200429257 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4B672441DBE9E3B006497EA /* Task.swift in Sources */,
 				D4B0CFB51DBE77E100429257 /* ViewController.swift in Sources */,
 				D4B0CFB31DBE77E100429257 /* AppDelegate.swift in Sources */,
 				D4B0CFBB1DBE77E200429257 /* Doit_Now.xcdatamodeld in Sources */,
@@ -306,6 +310,7 @@
 				D4B0CFC61DBE77E200429257 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
