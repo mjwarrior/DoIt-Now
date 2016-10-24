@@ -34,8 +34,14 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell  = UITableViewCell()
         let task = tasks[indexPath.row]
-        cell.textLabel?.text = task.name
-        return cell
+        if task.important{
+            cell.textLabel?.text = "Important❗️\(task.name)"
+
+        }else{
+            cell.textLabel?.text = task.name
+   
+        }
+     return cell
     }
     func makeTasks() -> [Task] {
      let task1 = Task()
